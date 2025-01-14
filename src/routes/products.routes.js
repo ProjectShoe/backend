@@ -13,7 +13,7 @@ const upload = require("../middleware/upload");
 router.post(
   "/addProduct",
   upload.single("image"),
-  verifyTokenAndAdmin,
+  verifyToken,
   ProductController.addProduct
 );
 //UpdateProduct
